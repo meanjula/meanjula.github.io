@@ -52,7 +52,7 @@ body {
   position: fixed;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 1;
 }
 
@@ -92,7 +92,9 @@ header {
 
 .logo {
   width: 6rem;
+  height: 2rem;
   padding: 5px;
+  margin-left: 5px;
 }
 .material-icons {
   color: var(--dark-color);
@@ -176,6 +178,7 @@ a {
   width: 200px;
   height: 250px;
   object-fit: cover;
+  margin-top: 1rem;
 }
 #about .box {
   display: flex;
@@ -336,27 +339,36 @@ footer p {
   }
 }
 @media (max-width: 576px) {
+  .navBar {
+    position: relative;
+  }
+  /*dispaly none makes menu item invisible*/
+  .nav-item {
+    display: none;
+    position: absolute;
+    background-color: #f8f3ea;
+    width: 100%;
+    margin-top: 1.8rem;
+  }
+
+  .nav-item a {
+    display: flex;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    justify-content: center;
+    background-color: var(--blue-color);
+  }
   #menu {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .nav-item {
-    display: none;
-  }
-  .navBar {
-    position: relative;
-    justify-content: left;
-  }
-  .nav-item {
-    background-color: #f8f3ea;
-    position: absolute;
-    width: 40vw;
-    margin-left: 8rem;
+    padding: 0;
+    margin-right: 2rem;
   }
   .nav-item a:hover {
-    background: #000;
+    background-color: var(--blue-color);
   }
   .welcome-text {
     font-size: 1.5rem;
@@ -377,15 +389,7 @@ footer p {
   #about .box {
     display: block;
   }
-  #about {
-    background-color: #f8f3ea;
-    color: var(--darkText);
-    width: 95%;
-    margin: auto;
-  }
-  #about p {
-    line-height: 2rem;
-  }
+
   #contact .container {
     font-size: 1rem;
   }
@@ -404,6 +408,11 @@ footer p {
 }
 
 @media (max-width: 350px) {
+  p,
+  a {
+    font-size: 0.8rem;
+    line-height: #f8f3ea;
+  }
   #contact .container {
     display: block;
     width: 100%;
