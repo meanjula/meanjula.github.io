@@ -6,6 +6,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   border-radius: 5px;
+  border: 1px solid red;
 }
 
 :root {
@@ -92,7 +93,7 @@ header {
 
 .logo {
   width: 6rem;
-  height: 2rem;
+  height: 3rem;
   padding: 5px;
   margin-left: 5px;
 }
@@ -172,7 +173,6 @@ a {
 }
 #about .container {
   padding-top: 1rem;
-  width: 90vw;
 }
 .about-img {
   width: 200px;
@@ -185,8 +185,8 @@ a {
 }
 #about p {
   text-align: justify;
-  margin: 0;
-  line-height: 2.5rem;
+  margin: 0 1rem;
+  line-height: 2.3rem;
 }
 /**************** Skills area ****************/
 
@@ -237,6 +237,9 @@ progress[value]::-webkit-progress-value {
 /**************** Contact area ****************/
 #contact {
   text-align: center;
+}
+section#contact {
+  padding-bottom: 0;
 }
 #contact h3 {
   height: 5rem;
@@ -300,7 +303,7 @@ input[type="submit"]:hover {
 footer p {
   text-align: center;
   color: var(--white-color);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 1.3rem;
 }
 /**************** top button ****************/
@@ -348,7 +351,7 @@ footer p {
     position: absolute;
     background-color: #f8f3ea;
     width: 100%;
-    margin-top: 1.8rem;
+    margin-top: 4rem;
   }
 
   .nav-item a {
@@ -386,10 +389,17 @@ footer p {
     margin: 1rem;
     padding: 5px;
   }
+  #about {
+    max-width: 80vw;
+  }
+
   #about .box {
     display: block;
   }
-
+  #about p {
+    margin: 0;
+    line-height: 2.3rem;
+  }
   #contact .container {
     font-size: 1rem;
   }
@@ -404,6 +414,9 @@ footer p {
   }
   section {
     padding: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
   }
 }
 
@@ -422,6 +435,10 @@ footer p {
     font-size: 1.5rem;
     text-shadow: none;
     color: rgb(206, 83, 26);
+  }
+  .logo {
+    width: 6rem;
+    height: 2rem;
   }
   .hero-banner {
     height: 70vh;
