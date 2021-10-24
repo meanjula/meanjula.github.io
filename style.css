@@ -272,9 +272,9 @@ textarea {
   border: none;
   margin-left: 3rem;
 }
-textarea {
-  height: 2rem;
-  padding: 0.5rem;
+.form-group textarea {
+  height: 3rem;
+  padding: 1rem;
 }
 
 input[type="submit"] {
@@ -292,6 +292,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: green;
+  width: 35%;
 }
 #contact-ref {
   width: 100%;
@@ -406,7 +407,10 @@ footer p {
   #contact .container {
     font-size: 1rem;
   }
-
+  .form-group {
+    display: inline-block;
+    padding: 5px;
+  }
   label {
     width: 40%;
     margin: 0.5rem 0;
@@ -415,6 +419,9 @@ footer p {
   input,
   textarea {
     margin-left: 2rem;
+  }
+  input#submit {
+    font-size: 0.8rem;
   }
   .contact-link {
     font-size: 1rem;
@@ -451,14 +458,12 @@ footer p {
   .hero-banner {
     height: 70vh;
   }
-  .form-group input,
-  textarea {
+  .form-group textarea,
+  input {
     width: 80%;
     margin-left: 1rem;
   }
-  input #submit {
-    width: 50%;
-  }
+
   #contact-ref {
     padding-top: 2rem;
   }
@@ -472,5 +477,12 @@ footer p {
   }
   section {
     padding: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  input#submit {
+    display: block;
+    font-size: 0.3rem;
+    width: 100%;
   }
 }
