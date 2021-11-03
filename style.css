@@ -34,6 +34,7 @@ h2 {
 }
 .bg {
   background-color: var(--white-color);
+  height: 5rem;
 }
 body {
   font-family: var(--main-font);
@@ -381,10 +382,12 @@ footer p {
     font-size: 1.5rem;
     text-shadow: none;
   }
-
   header {
-    font-size: 1rem;
+    height: 100%;
+    overflow: hidden;
+    font-size: 1;
   }
+
   #projects .card-box {
     display: block;
     margin: 0;
@@ -469,20 +472,14 @@ footer p {
   }
   .contact-link {
     font-size: 1rem;
-    padding: 0 2px;
+    padding: 0;
   }
+
   footer p {
     margin-bottom: 1rem;
     font-size: 1rem;
   }
   section {
     padding: 1rem;
-  }
-}
-@media (max-width: 280px) {
-  input#submit {
-    display: block;
-    font-size: 0.3rem;
-    width: 100%;
   }
 }
