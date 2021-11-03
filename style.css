@@ -383,8 +383,7 @@ footer p {
     text-shadow: none;
   }
   header {
-    height: 100%;
-    overflow: hidden;
+    width: auto;
     font-size: 1;
   }
 
