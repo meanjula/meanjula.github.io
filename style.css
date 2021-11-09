@@ -41,7 +41,7 @@ body {
   text-align: start;
   min-height: 100vh;
   line-height: 1.3rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: var(--bg-color);
   font-weight: 400;
 }
@@ -132,6 +132,9 @@ p,
 a {
   text-align: left;
   padding: 0.5rem;
+}
+h3 {
+  font-size: 1.2rem;
 }
 .card:hover {
   background-color: rgba(28, 103, 141, 0.5);
@@ -237,10 +240,9 @@ progress[value]::-webkit-progress-value {
 /**************** Contact area ****************/
 #contact {
   text-align: center;
+  padding-bottom: 2rem;
 }
-section#contact {
-  padding-bottom: 0;
-}
+
 #contact h3 {
   height: 5rem;
   padding-top: 2rem;
@@ -260,29 +262,30 @@ label {
   width: 20%;
   text-align: left;
 }
-form [type="submit"] :hover {
+inputt [type="submit"] :hover {
   background-color: green;
 }
-input {
-  height: 1.2rem;
-  padding: 1rem;
-}
+
 input,
 textarea {
   border-radius: 5px;
   border: none;
   margin-left: 3rem;
-}
-.form-group textarea {
-  height: 3rem;
   padding: 1rem;
+  width: 20%;
+}
+input {
+  height: 2rem;
+}
+textarea {
+  height: 5rem;
 }
 
 input[type="submit"] {
   cursor: pointer;
   background-color: var(--yellow-color);
   border: none;
-  width: 40%;
+  width: 30%;
   height: 40px;
   margin: 20px auto;
   padding: 0;
@@ -293,7 +296,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: green;
-  width: 35%;
+  width: 32%;
 }
 #contact-ref {
   width: 100%;
@@ -311,20 +314,20 @@ footer p {
   margin-bottom: 4rem;
   font-size: 1.3rem;
 }
-/**************** top button ****************/
+/**************** back to top button ****************/
 #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 1.2rem;
   border: none;
   outline: none;
   background-color: var(--yellow-color);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
 }
 
@@ -386,7 +389,9 @@ footer p {
     width: auto;
     font-size: 1;
   }
-
+  h2 {
+    font-size: 1.3rem;
+  }
   #projects .card-box {
     display: block;
     margin: 0;
@@ -406,28 +411,21 @@ footer p {
     margin: 0;
     line-height: 2.3rem;
   }
+
   #contact .container {
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .form-group {
-    display: inline-block;
-    padding: 5px;
-  }
-  label {
-    width: 40%;
-    margin: 0.5rem 0;
-    padding: 5px 0;
-  }
+  label,
   input,
   textarea {
-    margin-left: 2rem;
+    width: 80%;
+    margin: 5px;
   }
-  input#submit {
+  input[type="submit"] {
     font-size: 0.8rem;
-  }
-  .contact-link {
-    font-size: 1rem;
-    padding: 5px;
+    width: 50%;
   }
   section {
     padding: 1rem;
@@ -438,16 +436,15 @@ footer p {
 }
 
 @media (max-width: 350px) {
+  body {
+    font-size: 1rem;
+  }
   p,
   a {
     font-size: 0.8rem;
     line-height: #f8f3ea;
   }
-  #contact .container {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-  }
+
   .welcome-text {
     font-size: 1.5rem;
     text-shadow: none;
@@ -460,25 +457,24 @@ footer p {
   .hero-banner {
     height: 70vh;
   }
-  .form-group textarea,
-  input {
-    width: 80%;
-    margin-left: 1rem;
-  }
 
-  #contact-ref {
-    padding-top: 2rem;
+  #contact {
+    padding-bottom: 0;
+  }
+  label {
+    font-size: 1rem;
   }
   .contact-link {
     font-size: 1rem;
-    padding: 0;
+    padding: 1rem;
   }
-
   footer p {
     margin-bottom: 1rem;
-    font-size: 1rem;
   }
-  section {
-    padding: 1rem;
+  #myBtn {
+    bottom: 5px;
+    right: 5px;
+    font-size: 1rem;
+    padding: 5px;
   }
 }
