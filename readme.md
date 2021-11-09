@@ -4,7 +4,7 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Screenshots](#portfolio screenshots)
+- [Screenshots](#portfolio-screenshots)
 - [Sources](#Sources)
 
 ## General info
