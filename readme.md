@@ -1,19 +1,24 @@
-#Anjula's Portfolio
+# Anjula's Portfolio
 
-##Table of contents
+## Table of contents
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Screenshots](#portfolio screenshots)
 - [Sources](#Sources)
 
-##General info
+## General info
 
 Portfolio page created using html, css and javascript.
 Icons are imported from fontawesome and material icons page.
 Favicon created using figma and favicon converter.
 Designed logo in figma.
 
-##Technologies
+## Screenshots
+
+![portfolio screenshot1](images/front.png)
+
+## Technologies
 
 - HTML5
 - CSS3
@@ -21,7 +26,7 @@ Designed logo in figma.
 - Figma
 - favicon generator
 
-##Sources
+## Sources
 
 Images from [Unsplash](https://unsplash.com/).
 Favicon generator source [favicon](https://favicon.io/favicon-converter/).
