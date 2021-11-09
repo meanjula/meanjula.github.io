@@ -64,7 +64,15 @@ header {
       rgba(9, 9, 121, 0.4),
       rgba(0, 212, 255, 0.1)
     ),
-    url("images/mountain.jpg") no-repeat fixed center center/cover;
+    url("images/mountain.jpg") /* no-repeat fixed center center/cover */;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
   height: 95vh;
   width: 100%;
   font-family: var(--font);
