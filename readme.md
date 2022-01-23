@@ -18,7 +18,7 @@ Designed logo in figma.
 
 ## Screenshots
 
-![portfolio screenshot1](images/front.png)
+![portfolio screenshot1](images/portfolio.png)
 
 ## Technologies
 
