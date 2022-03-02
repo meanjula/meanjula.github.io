@@ -332,8 +332,10 @@ a {
   font-size: 5rem;
   color: rgb(12, 65, 87);
 }
-
-skills progress[value] {
+#skills progress {
+  margin-top: 1rem;
+}
+#skills progress[value] {
   height: 1.5rem;
   -webkit-appearance: none;
   appearance: none;
@@ -352,16 +354,20 @@ progress[value]::-webkit-progress-value {
 }
 .card .skill-icon {
   height: 100px;
-  width: 150px;
+  width: 100px;
   object-fit: contain;
-  margin: 50px 20px;
+  margin: 10px 5x;
 }
 .icon-div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-
+.style-icon {
+  width: 20px;
+  margin: 5px;
+}
 /**************** Contact area ****************/
 #contact {
   text-align: center;
