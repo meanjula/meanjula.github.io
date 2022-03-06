@@ -356,7 +356,7 @@ progress[value]::-webkit-progress-value {
   height: 100px;
   width: 100px;
   object-fit: contain;
-  margin: 10px 5x;
+  margin: 5px 10px;
 }
 .icon-div {
   display: flex;
@@ -366,7 +366,7 @@ progress[value]::-webkit-progress-value {
 }
 .style-icon {
   width: 20px;
-  margin: 5px;
+  margin: 0 5px;
 }
 /**************** Contact area ****************/
 #contact {
@@ -522,11 +522,18 @@ footer p {
   .welcome-text {
     font-size: 1.5rem;
     text-shadow: none;
+    margin-bottom: 4rem;
   }
 
   header {
     font-size: 1rem;
   }
+  .text-animation {
+    margin-top: 2rem;
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+
   #projects .card-box {
     display: block;
     margin: 0;
@@ -545,6 +552,7 @@ footer p {
   #about p {
     margin: 0;
     line-height: 2.3rem;
+    word-spacing: normal;
   }
   #contact .container {
     font-size: 1rem;
