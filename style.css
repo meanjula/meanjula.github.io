@@ -120,16 +120,16 @@ header {
   transform: rotate(360deg);
 }
 h1 {
-  padding: 3rem;
+  padding: 2rem;
 }
 .welcome-text {
   font-size: 3rem;
-  word-spacing: 0.5rem;
-  font-weight: 900;
+  word-spacing: 0.5rem; 
   color: white;
+  font-family: var(--side-font);
   /* background: url("images/feedcat.png"); */
-  background-size: 100% 100%;
-  font-family: "Inknut Antiqua", serif;
+  /* background-size: 100% 100%; */
+  
   /* text-shadow: 0px 0px 5px rgb(0, 68, 255); */
   /* z-index: 1; */
   /* background-clip: text;
@@ -138,7 +138,7 @@ h1 {
 }
 /**************** text animation ****************/
 .text-animation {
-  margin-top: 7rem;
+  margin-top: 4rem;
   color: whitesmoke;
   font-size: 1.2rem;
 }
