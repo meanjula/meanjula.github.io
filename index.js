@@ -35,7 +35,7 @@ window.onscroll = function () {
 };
 
 //for nav hamburger menu
-function myFunction() { 
+function myFunction() {
   let x = document.querySelector(".nav-item");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -48,3 +48,7 @@ const menu = document.getElementById('menu');
 menu.addEventListener('click',()=>{
   myFunction()
 })
+
+setInterval(function(){
+    document.getElementById("time").innerHTML= new Date().getFullYear()
+}, 1000)

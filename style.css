@@ -124,10 +124,10 @@ h1 {
 }
 .welcome-text {
   font-size: 3rem;
-  word-spacing: 0.5rem; 
+  word-spacing: 0.5rem;
   color: white;
   font-family: var(--side-font);
-  
+
 }
 /**************** text animation ****************/
 .text-animation {
@@ -144,12 +144,24 @@ h2 span::before {
   color: var(--yellow-color);
   font-family: var(--main-font);
   font-weight: 200;
-  animation: profile 5s infinite;
+  -webkit-animation: profile 5s infinite;
+          animation: profile 5s infinite;
 }
 i {
   display: block;
   font-size: 2rem;
   margin-top: 1rem;
+}
+@-webkit-keyframes profile {
+  0% {
+    content: "a FullStack Developer";
+  }
+  50% {
+    content: "a creative UI Designer";
+  }
+  100% {
+    content: "a continuous learner";
+  }
 }
 @keyframes profile {
   0% {
@@ -191,7 +203,8 @@ a {
 .card img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /**************** projects, skills common area ****************/
 
@@ -229,7 +242,8 @@ a {
 .about-img {
   width: 200px;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 1rem;
 }
 #about .box {
@@ -277,7 +291,8 @@ a {
 #skills progress[value] {
   height: 1.5rem;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   background: transparent;
 }
 
@@ -294,7 +309,8 @@ progress[value]::-webkit-progress-value {
 .card .skill-icon {
   height: 100px;
   width: 100px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 5px 10px;
 }
 .icon-div {
@@ -326,7 +342,7 @@ section#contact {
 
 .form-group {
   display: flex;
-  padding: 20px 10px;
+  padding:  10px;
   align-items: center;
   justify-content: center;
 }
@@ -344,15 +360,13 @@ input,
 textarea {
   border-radius: 5px;
   border: none;
-  margin-left: 3rem;
 }
+
 .form-group textarea {
   height: auto;
   padding: 1rem;
 }
-label[for="message"] {
-  margin-left: 2rem;
-}
+
 input[type="submit"] {
   cursor: pointer;
   background-color: var(--yellow-color);
@@ -444,6 +458,13 @@ footer p {
     justify-content: center;
     background-color: var(--blue-color);
   }
+  .nav-item a::after {
+    transition: none;
+  }
+  .nav-item a:hover::after,
+  .nav-item a:hover::before {
+    transform: none;
+  }
   .material-icons {
     color: white;
   }
@@ -510,6 +531,9 @@ footer p {
   }
   label[for="message"] {
     margin-left: 0rem;
+  }
+   textarea {
+    padding-bottom: 2rem;
   }
   input#submit {
     font-size: 0.8rem;
