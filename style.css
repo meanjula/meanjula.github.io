@@ -9,12 +9,12 @@ html {
 }
 
 :root {
-  --bg-color: rgb(91, 117, 129);
+  --bg-color: #4A3F3D;
   --dark-text: rgb(1, 12, 17);
-  --blue-color: rgba(28, 103, 141, 0.5);
+  --blue-color: rgba(6, 90, 132, 0.5);
   --white-color: white;
   --dark-color: #000;
-  --yellow-color: rgb(191, 137, 12);
+  --yellow-color: rgb(162, 127, 46);
   --main-font: "Montserrat", sans-serif;
   --side-font: "Lato", sans-serif;
 }
@@ -60,8 +60,8 @@ body {
 }
 
 header {
-  background: url("images/darkTheme.jpg") no-repeat fixed center center/cover;
-  height: 95vh;
+  background: url("images/bloom.jpg.jpg") no-repeat fixed center center/cover;
+  height: 100vh;
   width: 100%;
   background-size: 100% 100%;
   font-family: var(--font);
@@ -120,20 +120,23 @@ header {
   transform: rotate(360deg);
 }
 h1 {
-  padding: 2rem;
+  padding: 1rem;
 }
 .welcome-text {
   font-size: 3rem;
   word-spacing: 0.5rem;
-  color: white;
+  margin-bottom: 0.5rem;
+  margin-right:1rem;
+  color: #fedee4;
   font-family: var(--side-font);
 
 }
 /**************** text animation ****************/
 .text-animation {
-  margin-top: 4rem;
+  margin-top: rem;
   color: whitesmoke;
   font-size: 1.2rem;
+  background:black;
 }
 .text-animation h2 {
   font-family: var(--side-font);
@@ -142,10 +145,11 @@ h1 {
 h2 span::before {
   content: "";
   color: var(--yellow-color);
+   background:black;
   font-family: var(--main-font);
-  font-weight: 200;
+  font-weight: 400;
   -webkit-animation: profile 5s infinite;
-          animation: profile 5s infinite;
+  animation: profile 5s infinite;
 }
 i {
   display: block;
