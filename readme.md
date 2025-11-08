@@ -27,6 +27,7 @@ Designed logo in figma.
 - JavaScript
 - Figma
 - favicon generator
+- vs code & extensions (Five server to run app in browser )
 
 ## Sources
 
