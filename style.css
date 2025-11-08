@@ -131,7 +131,7 @@ h1 {
 }
 /**************** text animation ****************/
 .text-animation {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   color: whitesmoke;
   font-size: 1.2rem;
 }
@@ -491,7 +491,7 @@ footer p {
     font-size: 1rem;
   }
   .text-animation {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: whitesmoke;
     font-size: 0.8rem;
   }
