@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  --bg-color: rgb(91, 117, 129);
+  --bg-color: #341d36;
   --dark-text: rgb(1, 12, 17);
   --blue-color: rgba(28, 103, 141, 0.5);
   --white-color: white;
@@ -56,17 +56,18 @@ body {
   width: 100%;
   justify-content: space-around;
   z-index: 1;
-   background:rgb(23, 31, 34);
+   background:#341d36;
 }
 
 header {
-  background: url("images/darkTheme.jpg") no-repeat fixed center center/cover;
+  background: url("images/codetheme.jpg") no-repeat fixed center center/cover;
   height: 100vh;
   width: 100%;
   background-size: 100% 100%;
   font-family: var(--font);
   font-size: 1.1rem;
   position: relative;
+  background-color: #000; 
 }
 
 /*to place item in center display parent element flex and center the proprty align-item and justify content */
@@ -98,8 +99,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
+  border-top: 2px solid var(--white-color);
+  border-left: 2px solid var(--white-color);
   transition: all 0.3s;
 }
 .nav-item a::after {
@@ -109,8 +110,8 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border-bottom: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
   transition: all 0.3s;
 }
 .nav-item a:hover::after,
@@ -131,17 +132,15 @@ h1 {
 }
 /**************** text animation ****************/
 .text-animation {
-  margin-top: 4.5rem;
-  color: whitesmoke;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .text-animation h2 {
   font-family: var(--side-font);
-  font-weight: 400;
+  font-weight: 600;
 }
 h2 span::before {
   content: "";
-  color: var(--yellow-color);
+  color: var(--white-color);
   font-family: var(--main-font);
   font-weight: 200;
   -webkit-animation: profile 5s infinite;
