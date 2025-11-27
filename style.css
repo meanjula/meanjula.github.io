@@ -254,8 +254,8 @@ a {
 
 .image-container {
   display: flex;
-  justify-content: space-between; /* Or 'space-around' or 'center' based on your preference */
-  gap: 10px; /* Adds space between the images */
+  justify-content: space-between;
+  gap: 5px; 
 }
 /**************** Skills area ****************/
 
