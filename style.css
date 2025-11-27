@@ -252,7 +252,11 @@ a {
   transform: scale(1.05);
 }
 
-
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Or 'space-around' or 'center' based on your preference */
+  gap: 10px; /* Adds space between the images */
+}
 /**************** Skills area ****************/
 
 #skills .card-box {
@@ -324,13 +328,11 @@ progress[value]::-webkit-progress-value {
 /**************** Contact area ****************/
 #contact {
   text-align: center;
+  margin: 1rem;
 }
-section#contact {
-  padding-bottom: 0;
-}
+
 #contact h3 {
-  height: 5rem;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 #contact .container {
   background-color: var(--dark-color);
@@ -343,7 +345,7 @@ section#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-   padding:  1rem;
+  padding:  1rem;
 }
 label {
   display: inline-block;
@@ -351,19 +353,16 @@ label {
   text-align: left;
 }
 
-input {
-  height: 1.2rem;
-  padding: 1rem;
-}
 input,
 textarea {
   border-radius: 5px;
   border: none;
+  padding: 1rem 2rem;
 }
 
 .form-group textarea {
   height: auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 input[type="submit"] {
@@ -371,7 +370,6 @@ input[type="submit"] {
   background-color: var(--yellow-color);
   border: none;
   width: 35%;
-  height: 40px;
   margin: 2rem auto;
   text-align: center;
   text-transform: uppercase;

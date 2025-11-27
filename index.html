@@ -18,7 +18,7 @@
   <button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <header>
       <div class="navBar">
-        <a href="#">
+        <a href="">
           <img src="assets/A.svg" alt="my-logo"  width="150" height="100">
         </a>
         <nav class="nav-item">
@@ -63,35 +63,45 @@
           <h2>Projects</h2>
           <div class="card-box">
             <div class="card">
-              <img src="images/timetables.png" alt="timetables" class="projImg" width="300" height="200">
+              <div class="image-container">
+                <img src="images/code-explanation.png" alt="AI code explainer image"  width="300" height="200">
+                <img src="images/code-explain-UI.png" alt="AI code explainer image"  width="300" height="200">
+              </div>
               <div class="content">
-                <h3>Public Transport Timetables</h3>
-                <p>This is the real timetable of public transportation of helsinki region. Cretaed using React, GraphQl, Styled components. Digitransit API is used as data source. </p>
-                <a href="https://github.com/meanjula/timetables_trialSystem" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+                <h3>AI Code Explainer</h3>
+                <p>This full-stack app uses React and Vite for the frontend and Express.js for the backend. It leverages Ollama's Llama3 model to provide real-time, AI-powered explanations of code snippets in plain language. Users can input code, and the app generates easy-to-understand descriptions.</p>
+                <a href="https://github.com/meanjula/AI_code_describer_with_ollama" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/shoopingcart.png" alt="shoppingcart" class="projImg" width="300" height="200">
+              <div class="content">
+                <h3>Shopping cart</h3>
+                <p>This is the shopping cart created using 'React' with 'Typescript', styled with MUI. Fetched products from fakeStoreApi, used useQuery from react-query to make fetching, updating easy. </p>
+                <a href="https://github.com/meanjula/shopping_cart_ts" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/catRestApi.png" alt="catRestApi" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Cat REST API</h3>
-                <p>This is the Rest API created using Javascript, Express, mariadb. Created a single-page web application using rest server data.</p>
+                <p>This is the App with Rest API created using Javascript, ExpressJs and Mariadb. It is a single-page web application using rest server data.</p>
                 <a href="https://github.com/meanjula/Cat_RestApi" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
-
             <div class="card">
-              <img src="images/solar.png" alt="animals image" class="projImg" width="300" height="200">
+              <img src="images/timetables.png" alt="timetables" class="projImg" width="300" height="200">
               <div class="content">
-                <h3>Mass-SolarSystem</h3>
-                <p>This is the project completed with vanilla javascript where mass of a object is calculated in different planet of solar system.</p>
-                <a href="https://github.com/meanjula/JS_30_days_challange/tree/master/day_24" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
+                <h3>Public Transport Timetables</h3>
+                <p>This app displays the real-time public transportation timetable for Helsinki region. Cretaed using React, GraphQl, Styled components. Digitransit API is used as data source. </p>
+                <a href="https://github.com/meanjula/timetables_trialSystem" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/weather.png" alt="animals image" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Countries_Weather</h3>
-                <p>This is the countries weather app created using react, weather data is fetched using axios from openweather API.</p>
+                <p>This is a weather app built with React, where weather data is fetched using Axios from the OpenWeather API to provide real-time weather updates for different countries.</p>
                 <a href="https://github.com/meanjula/countries_data" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
                 <a href="https://anjulas-countries-app.netlify.app" target="_blank" rel="noopener"><span class="material-icons" style="color: black;">
                   language
@@ -106,15 +116,14 @@
                 <p>This is the speed game created using react and class component to handle the state. Final product is deployed in netlify.</p>
                 <a href="https://github.com/meanjula/animals_card" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
                 <a href="https://priceless-roentgen-f4e83a.netlify.app" target="_blank" rel="noopener"><span class="material-icons" style="color: black;">
-                  language
-                  </span></a>
+                  language</span></a>
               </div>
             </div>
             <div class="card">
               <img src="images/Product_Landing.png" alt="productl anding project image"  class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Responsive webdesign</h3>
-                <p>This responsive web design project includes 5 mini projects which are done using html and css.</p>
+                <p>This responsive web design project features five mini-projects built using only HTML CSS and Vanilla Javascript. Each mini-project showcases different layout techniques and styling approaches, demonstrating clean, modern, and mobile-friendly design.</p>
                 <a href="https://github.com/meanjula/responsive_webdesign" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
@@ -122,7 +131,7 @@
               <img src="images/pokemon.png" alt="pokemon" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Pokemon App</h3>
-                <p>This is the Pokemon app created using react usestate and useeffect hook and used pokeApi for fetching dynamic data.</p>
+                <p>This Pokémon app, built with React, uses useState and useEffect hooks to fetch dynamic data from the PokeAPI. It implements pagination with "Prev" and "Next" buttons for smooth navigation between Pokemon.</p>
                 <a href="https://github.com/meanjula/pokemon_app" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
@@ -130,16 +139,8 @@
               <img src="images/calorieTracker.png" alt="calorie tracker image" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Calorie tracker</h3>
-                <p>Calorie tracker app is made using javascript, module bundler called parcel, and chartr.js.</p>
+                <p>This calorie tracker app is built using JavaScript, the Parcel module bundler, and Chart.js. The app offers a clean, interactive interface for tracking the caloric value of food and displays the data visually with dynamic charts.</p>
                 <a href="https://github.com/meanjula/calorie-tracker" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="images/shoopingcart.png" alt="shoppingcart" class="projImg" width="300" height="200">
-              <div class="content">
-                <h3>Shopping cart</h3>
-                <p>This is the shopping cart created using 'React' with 'Typescript', styled with MUI. Fetched products from fakeStoreApi, used useQuery from react-query to make fetching, updating easy. </p>
-                <a href="https://github.com/meanjula/shopping_cart_ts" target="_blank" rel="noopener"><i class="fab fa-github-square" style="color: black;"></i></a>
               </div>
             </div>
           </div>
