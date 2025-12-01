@@ -182,7 +182,7 @@ section {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -302,10 +302,6 @@ a {
 }
 #skills progress[value] {
   height: 1.5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
 }
 
 progress[value]::-webkit-progress-bar {
