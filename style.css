@@ -9,34 +9,35 @@ html {
 }
 
 :root {
-  --bg-color: #341d36;
-  --dark-text: rgb(1, 12, 17);
+  --dark-text: #010c11;
   --blue-color: rgba(28, 103, 141, 0.5);
   --white-color: white;
   --dark-color: #000;
   --yellow-color: rgb(191, 137, 12);
   --main-font: "Montserrat", sans-serif;
   --side-font: "Lato", sans-serif;
-  --nav-color: #2a0d2c;
+  --nav-color: rgba(20, 20, 25, 0.75);      
+  --bg-color: #0f0f14;                          
+  --card-bg: rgba(255, 255, 255, 0.08);  
+  --card-border: rgba(255, 255, 255, 0.12);   
 }
-a {
+#links a {
   color: var(--yellow-color);
   text-decoration: none;
 }
+
 p {
   word-spacing: 0.3rem;
   font-family: var(--side-font);
   font-size: 1rem;
   line-height: 32px;
 }
-h2 {
-  padding: 1rem;
-  color: var(--white-color);
-}
+
 .bg {
   background-color: var(--dark-color);
   height: 5rem;
 }
+
 body {
   font-family: var(--main-font);
   text-align: start;
@@ -45,11 +46,7 @@ body {
   font-size: 1.2rem;
   background-color: var(--bg-color);
   font-weight: 400;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.88);  
 }
 
 .navBar {
@@ -60,6 +57,11 @@ body {
   z-index: 1;
   background: var(--nav-color);
   height: max-content;
+  backdrop-filter: blur(12px);               
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4),
+    0 0 10px rgba(255, 255, 255, 0.08);
 }
 
 header {
@@ -173,16 +175,29 @@ i {
   }
 }
 
+/* Sections */
 section {
-  padding-top: 5rem;
+  padding: 6rem 2rem;
   min-height: 500px; 
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--white-color);
+  text-align: center;
 }
 /**************** About area ****************/
 
 #about {
   background-color: #f8f3ea;
-  color: var(--darkText);
-  max-width: 80%;
+  color: var(--dark-text);
+  max-width: 75%;
   margin: auto; 
 }
 #about h2 {
@@ -190,91 +205,85 @@ section {
 }
 #about .box {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-
 }
 .about-img {
-  width: 200px;
-  height: 250px;
-  -o-object-fit: cover;
+  width: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
 #about p {
-  text-align: justify;
-  margin: 0 1rem;
-  line-height: 2.3rem;
+  flex: 1;
+  font-family: var(--side-font);
+  line-height: 2rem;
+}
+
+/**************** projects, skills common area ****************/
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.card {
+  background-color: var(--card-bg);
+  flex-basis: 30%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow:
+    0 6px 25px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(255, 255, 255, 0.05);
+  transition: transform 300ms ease, 
+  box-shadow 300ms ease;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.image-container {
+  display: flex;
+  object-fit: cover;
+  gap: 5px; 
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.08);
 }
 /**************** project area ****************/
 
-#projects .card-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-}
 .content h3,
 p,
 a {
-  text-align: left;
   padding: 0.5rem;
+}
+#projects a{
+  color: var(--white-color);
 }
 .card:hover {
   background-color: rgba(28, 103, 141, 0.5);
   color: var(--white-color);
 }
 
-.card img {
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-/**************** projects, skills common area ****************/
-
-.card {
-  background-color: var(--white-color);
-  flex-basis: 30%;
-  margin: 1rem;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--white-color);
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  overflow: hidden;
-  transition: transform 500ms ease;
-}
-.card:hover {
-  transform: scale(1.05);
-}
-
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 5px; 
-}
 /**************** Skills area ****************/
 
 #skills .card-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   text-align: center;
-  justify-content: space-evenly;
-  width: 100%;
 }
-#skills .card {
-  padding: 1rem 0;
-}
-
-#skills a {
-  display: block;
-  text-align: center;
-  margin: 2rem;
+#skills p {
+  font-size: large;
 }
 
 #skills .card:hover {
@@ -288,7 +297,8 @@ a {
   color: rgb(12, 65, 87);
 }
 #skills progress {
-  margin-top: 1rem;
+  margin: 2rem 0;
+  
 }
 #skills progress[value] {
   height: 1.5rem;
@@ -299,7 +309,7 @@ a {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: var(--yellow-color);
+  background-color: var(--white-color);
   border-radius: 2px;
 }
 
@@ -311,8 +321,7 @@ progress[value]::-webkit-progress-value {
 .card .skill-icon {
   height: 100px;
   width: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 5px 10px;
 }
 .icon-div {
@@ -321,75 +330,70 @@ progress[value]::-webkit-progress-value {
   align-items: center;
   justify-content: center;
 }
-.style-icon {
-  width: 20px;
-  margin: 0 5px;
-}
+
 /**************** Contact area ****************/
-#contact {
+#contact .container {
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  padding: 3rem;
+  max-width: 50%;
+  margin: auto;
   text-align: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 
 #contact h3 {
-  padding: 2rem;
-}
-#contact .container {
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  font-size: 1.2rem;
-  padding:  1rem;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding:  1rem;
+  padding-bottom: 2rem;
 }
 label {
-  display: inline-block;
-  width: 20%;
   text-align: left;
+  padding: 0.5rem 0;
 }
 
 input,
 textarea {
-  border-radius: 5px;
+  padding: 1rem;
   border: none;
-  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
 }
 
-.form-group textarea {
-  height: auto;
-  padding: 1rem 2rem;
+input:focus,
+textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 input[type="submit"] {
+  background: var(--yellow-color);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: var(--yellow-color);
-  border: none;
-  width: 35%;
-  margin: 2rem auto;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white-color);
-  font-size: 16px;
+  transition: all 0.3s;
+  margin-top: 1rem;
 }
 
 input[type="submit"]:hover {
-  background-color: green;
-  width: 25%;
+  transform: translateY(-2px);
+  background: #e0b700;
 }
 
-footer p {
+/* Footer */
+footer {
   text-align: center;
+  padding: 2rem 0;
   color: var(--white-color);
-  margin-bottom: 4rem;
-  font-size: 1.3rem;
 }
 /**************** top button ****************/
-#myBtn {
+ #myBtn {
   display: none;
   position: fixed;
   bottom: 10px;
@@ -403,40 +407,34 @@ footer p {
   cursor: pointer;
   padding: 5px;
   border-radius: 4px;
-}
+} 
 
 /**************** Tablet support ****************/
-@media (max-width: 899px) {
-  .card {
-    flex-basis: 40%;
-  }
-  .nav-item a {
+
+@media(max-width:900px) {
+    .nav-item a {
     padding: 0.2rem;
   }
-  .welcome-text {
-    font-size: 4rem;
-  }
-  section {
-   min-height: auto;
-  }
-
-  #projects .card-box {
-    display: block;
-    margin: 0;
-  }
-  #skills .card {
-    margin: 2rem 0;
-  }
-  #skills .card-box {
-    display: block;
-  }
-  #skills .container {
-    width: 90%;
-  }
   .card {
     flex-basis: 40%;
-  } 
+    cursor: pointer;
+  }
+  .card-box {
+    gap: 2rem;
 }
+  #about .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  #projects h3 {
+    font-size: 1rem;
+  }
+  #contact .container {
+  padding: 1rem;
+  max-width: 80%;
+}
+}
+
 @media (max-width: 576px) {
   .navBar {
     position: relative;
@@ -483,65 +481,36 @@ footer p {
     font-size: 2rem;
     text-shadow: none;
   }
-
   header {
     font-size: 1rem;
   }
-  .text-animation {
-    color: whitesmoke;
+   .text-animation {
     font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 3rem;
+    padding-bottom: 1rem;
   }
-  #projects .card-box {
-    display: block;
-    margin: 0;
+  section h2 {
+    font-size: 1.5rem;
   }
-  .card {
-    margin: 1rem;
-    padding: 5px;
-  }
-  #about {
-    max-width: 80vw;
-  }
-  #about .box {
-    display: block;
-  }
-  #about p {
-    margin: 0;
-    line-height: 2.3rem;
-    word-spacing: normal;
-  }
-  #contact .container {
-    font-size: 1rem;
-  }
-  .form-group {
-    display: block;
-    text-align: initial;
-  }
-  label {
-    width: 40%;
-    margin: 0.5rem 0;
-  }
-  input,
-  textarea {
-    margin-left: 0rem;
-    width: 100%;
-  }
-  label[for="message"] {
-    margin-left: 0rem;
-  }
-   textarea {
-    padding-bottom: 2rem;
-  }
-  input#submit {
-    font-size: 0.8rem;
-    width: 50%;
-  }
-  section {
-    padding: 1rem;
-  }
-  footer p {
-    font-size: 1rem;
-  }
+  .about-img {
+  width: 200px;
+  height: 250px;
+}
+.card {
+  flex-basis: 100%;
+}
+ #contact .container {
+  max-width: 100%;
+}
+input,
+textarea {
+  padding: 0.8rem;
+}
+label {
+  font-size: 1rem;
+}
+
 }
 @media (max-width: 350px) {
   p,
@@ -549,34 +518,26 @@ footer p {
     font-size: 0.8rem;
     line-height: #f8f3ea;
   }
-  #contact .container {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-  }
   .welcome-text {
     font-size: 1.5rem;
-    text-shadow: none;
-    color: rgb(206, 83, 26);
   }
+  #about .box {
+  padding:  1rem;
+
+}
   .logo {
     width: 6rem;
     height: 2rem;
   }
-  .hero-banner {
-    height: 70vh;
+   section {
+    padding: 1rem;
   }
-  .form-group textarea,
-  input {
-    width: 80%;
-    margin-left: 1rem;
-  }
-
+  input[type="submit"] {
+  padding: 1rem;
+}
   footer p {
     margin-bottom: 1rem;
     font-size: 1rem;
   }
-  section {
-    padding: 1rem;
-  }
+ 
 }
