@@ -11,7 +11,7 @@ html {
 :root {
   --dark-text: #010c11;
   --blue-color: rgba(28, 103, 141, 0.5);
-  --white-color: white;
+  --white-color: rgba(255, 255, 255, 0.88);
   --dark-color: #000;
   --yellow-color: rgb(191, 137, 12);
   --main-font: "Montserrat", sans-serif;
@@ -72,7 +72,7 @@ header {
   font-family: var(--font);
   font-size: 1.1rem;
   position: relative;
-  background-color: #000; 
+  background-color: var(--bg-color); 
 }
 
 /*to place item in center display parent element flex and center the proprty align-item and justify content */
@@ -131,19 +131,21 @@ h1 {
 .welcome-text {
   font-size: 4rem;
   word-spacing: 0.5rem;
-  color: white;
+  color: var(--white-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: var(--side-font);
 }
 /**************** text animation ****************/
 .text-animation {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--side-font);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2 span::before {
   content: "";
   color: var(--white-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   -webkit-animation: profile 5s infinite;
   animation: profile 5s infinite;
 }
@@ -356,20 +358,19 @@ textarea {
   padding: 1rem;
   border: none;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-color);
   color: white;
   font-size: 1rem;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
-  background: rgba(255, 255, 255, 0.18);
+  outline: none; 
 }
 
 input[type="submit"] {
   background: var(--yellow-color);
-  color: #000;
+  color: var(--dark-text);
   padding: 1rem 2rem;
   border-radius: 8px;
   cursor: pointer;
