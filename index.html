@@ -1,233 +1,287 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&family=Lato:ital,wght@0,100;0,300;1,400&family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png"  href="assets/">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <script src="https://kit.fontawesome.com/9d65ca8cf1.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&family=Lato:ital,wght@0,100;0,300;1,400&family=Montserrat:wght@100;300;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="assets/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/9d65ca8cf1.js"></script>
 </head>
+
 <body>
-  <button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <header>
-      <div class="navBar">
-        <a href="">
-          <img src="assets/A.svg" alt="my-logo"  width="150" height="100">
+  <button id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <header>
+    <div class="navBar">
+      <a href="">
+        <img src="assets/A.svg" alt="my-logo" width="150" height="100">
+      </a>
+      <nav class="nav-item">
+        <a href="#about">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contacts</a>
+      </nav>
+      <a id="menu">
+        <span class="material-icons">
+          menu
+        </span>
+      </a>
+    </div>
+    <div class="hero-banner">
+      <h1 class="welcome-text"> Anjula Timsina</h1>
+      <div class="text-animation">
+        <h2>I am <span></span></h2>
+      </div>
+      <div id="links">
+        <a class="contact-link" href="https://www.linkedin.com/in/meanjula/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin fa-3x"></i>
         </a>
-        <nav class="nav-item">
-          <a href="#about">About me</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contacts</a>
-        </nav>
-        <a id="menu">
-          <span class="material-icons">
-            menu
-          </span>
-        </a> 
+        <a class="contact-link" href="https://github.com/meanjula" target="_blank" rel="noopener">
+          <i class="fab fa-github-square fa-3x"></i>
+        </a>
       </div>
-      <div class="hero-banner">
-        <h1 class="welcome-text"> Anjula Timsina</h1>
-        <div class="text-animation">
-          <h2>I am <span></span></h2>
+  </header>
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="box">
+          <img src="images/anjula1.jpg" class="about-img" width="300" height="200">
+          <p>Hello, my name is Anjula Ghale Timsina. I’m a software developer from Helsinki, Finland. I graduated from
+            Business College Helsinki as a Full Stack Web Developer and have almost 2 years of experience in the field.
+            My main interest in web development is user interface design and front-end development, where I enjoy
+            creating clean, creative, and visually engaging experiences.
+            As well as, I am eager to apply my backend development knowledge and skills to create fully functional, end-to-end web
+            applications.
+            Below are some of the projects I’ve enjoyed working on. I’m always open to collaborating on modern,
+            cutting-edge, or AI-related projects. Feel free to connect with me on LinkedIn or Instagram, or reach out
+            via email.
+          </p>
         </div>
-        <div id="links">
-          <a class="contact-link" href="https://www.linkedin.com/in/meanjula/" target="_blank" rel="noopener">
-              <i class="fab fa-linkedin fa-3x"></i>
-          </a>
-          <a class="contact-link" href="https://github.com/meanjula" target="_blank" rel="noopener">
-           <i class="fab fa-github-square fa-3x" ></i>
-          </a>
       </div>
-    </header>
-    <main>
-      <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-          <div class="box">
-            <img src="images/anjula1.jpg" class="about-img" width="300" height="200">
-            <p>Hello, my name is Anjula Ghale Timsina. I’m a software developer from Helsinki, Finland. I graduated from Helsinki Business College as a Full Stack Web Developer and have almost 2 years of experience in the field. My core interest in web development lies in user interface design and front-end development, as I enjoy working on creative and visually engaging tasks.
-            Here are few of my past projects that I have enjoyed working on. I would love to collaborate and contribute if you have got any interesting UI design/Front-end development projects. You can find me on LinkedIn and Instagram or reach me via email.</p>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <div class="container">
-          <h2>Projects</h2>
-          <div class="card-box">
-            <div class="card">
-              <div class="image-container">
-                <img src="images/code-explanation.png" alt="AI code explainer image"  width="300" height="200">
-                <img src="images/code-explain-UI.png" alt="AI code explainer image"  width="300" height="200">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-box">
+          <div class="card">
+            <div class="image-container">
+              <img src="images/code-explanation.png" alt="AI code explainer image" width="300" height="200">
+              <img src="images/code-explain-UI.png" alt="AI code explainer image" width="300" height="200">
+            </div>
+            <div class="content">
+              <h3>AI Code Explainer</h3>
+              <p>This full-stack app uses React and Vite for the frontend and Express.js for the backend. It leverages
+                Ollama's Llama3 model to provide real-time, AI-powered explanations of code snippets in plain language.
+                Users can input code, and the app generates easy-to-understand descriptions.</p>
+              <a href="https://github.com/meanjula/AI_code_describer_with_ollama" target="_blank" rel="noopener"><i
+                  class="fab fa-github-square"></i></a>
               </div>
-              <div class="content">
-                <h3>AI Code Explainer</h3>
-                <p>This full-stack app uses React and Vite for the frontend and Express.js for the backend. It leverages Ollama's Llama3 model to provide real-time, AI-powered explanations of code snippets in plain language. Users can input code, and the app generates easy-to-understand descriptions.</p>
-                <a href="https://github.com/meanjula/AI_code_describer_with_ollama" target="_blank" rel="noopener"><i class="fab fa-github-square" "></i></a>
-              </div>
+            </div>
+            <div class=" card">
+                  <img src="images/code-collab.png" alt="productl anding project image" class="projImg" width="300"
+                    height="200">
+                  <div class="content">
+                    <h3>Code-Collab</h3>
+                    <p>This is the lightweight, collaborative code editor designed for technical interview practice. The
+                      application allows users to create a sharable session link so multiple candidates or interviewers
+                      can join and edit code simultaneously, shows real-time updates and supports multiple programming
+                      languages.</p>
+                    <a href="https://codewithanjula.netlify.app/" target="_blank" rel="noopener"><i
+                        class="fab fa-github-square"></i></a>
+                  </div>
             </div>
             <div class="card">
               <img src="images/shoopingcart.png" alt="shoppingcart" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Shopping cart</h3>
-                <p>This is the shopping cart created using 'React' with 'Typescript', styled with MUI. Fetched products from fakeStoreApi, used useQuery from react-query to make fetching, updating easy. </p>
-                <a href="https://github.com/meanjula/shopping_cart_ts" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This is the shopping cart created using 'React' with 'Typescript', styled with MUI. Fetched products
+                  from fakeStoreApi, used useQuery from react-query to make fetching, updating easy. </p>
+                <a href="https://github.com/meanjula/shopping_cart_ts" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/catRestApi.png" alt="catRestApi" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Cat REST API</h3>
-                <p>This is the App with Rest API created using Javascript, ExpressJs and Mariadb. It is a single-page web application using rest server data.</p>
-                <a href="https://github.com/meanjula/Cat_RestApi" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This is the App with Rest API created using Javascript, ExpressJs and Mariadb. It is a single-page
+                  web application using rest server data.</p>
+                <a href="https://github.com/meanjula/Cat_RestApi" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/timetables.png" alt="timetables" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Public Transport Timetables</h3>
-                <p>This app displays the real-time public transportation timetable for Helsinki region. Cretaed using React, GraphQl, Styled components. Digitransit API is used as data source. </p>
-                <a href="https://github.com/meanjula/timetables_trialSystem" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This app displays the real-time public transportation timetable for Helsinki region. Cretaed using
+                  React, GraphQl, Styled components. Digitransit API is used as data source. </p>
+                <a href="https://github.com/meanjula/timetables_trialSystem" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/weather.png" alt="animals image" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Countries_Weather</h3>
-                <p>This is a weather app built with React, where weather data is fetched using Axios from the OpenWeather API to provide real-time weather updates for different countries.</p>
-                <a href="https://github.com/meanjula/countries_data" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
-                <a href="https://anjulas-countries-app.netlify.app" target="_blank" rel="noopener"><span class="material-icons" >
-                  language
+                <p>This is a weather app built with React, where weather data is fetched using Axios from the
+                  OpenWeather API to provide real-time weather updates for different countries.</p>
+                <a href="https://github.com/meanjula/countries_data" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
+                <a href="https://anjulas-countries-app.netlify.app" target="_blank" rel="noopener"><span
+                    class="material-icons">
+                    language
                   </span>
-                  </a>
+                </a>
               </div>
             </div>
             <div class="card">
               <img src="images/feedcat.png" alt="animals image" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Feed the cat</h3>
-                <p>This is the speed game created using react and class component to handle the state. Final product is deployed in netlify.</p>
-                <a href="https://github.com/meanjula/animals_card" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
-                <a href="https://priceless-roentgen-f4e83a.netlify.app" target="_blank" rel="noopener"><span class="material-icons" >
-                  language</span></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="images/Product_Landing.png" alt="productl anding project image"  class="projImg" width="300" height="200">
-              <div class="content">
-                <h3>Responsive webdesign</h3>
-                <p>This responsive web design project features five mini-projects built using only HTML CSS and Vanilla Javascript. Each mini-project showcases different layout techniques and styling approaches, demonstrating clean, modern, and mobile-friendly design.</p>
-                <a href="https://github.com/meanjula/responsive_webdesign" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This is the speed game created using react and class component to handle the state. Final product is
+                  deployed in netlify.</p>
+                <a href="https://github.com/meanjula/animals_card" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
+                <a href="https://priceless-roentgen-f4e83a.netlify.app" target="_blank" rel="noopener"><span
+                    class="material-icons">
+                    language</span></a>
               </div>
             </div>
             <div class="card">
               <img src="images/pokemon.png" alt="pokemon" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Pokemon App</h3>
-                <p>This Pokémon app, built with React, uses useState and useEffect hooks to fetch dynamic data from the PokeAPI. It implements pagination with "Prev" and "Next" buttons for smooth navigation between Pokemon.</p>
-                <a href="https://github.com/meanjula/pokemon_app" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This Pokémon app, built with React, uses useState and useEffect hooks to fetch dynamic data from the
+                  PokeAPI. It implements pagination with "Prev" and "Next" buttons for smooth navigation between
+                  Pokemon.</p>
+                <a href="https://github.com/meanjula/pokemon_app" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
               </div>
             </div>
             <div class="card">
               <img src="images/calorieTracker.png" alt="calorie tracker image" class="projImg" width="300" height="200">
               <div class="content">
                 <h3>Calorie tracker</h3>
-                <p>This calorie tracker app is built using JavaScript, the Parcel module bundler, and Chart.js. The app offers a clean, interactive interface for tracking the caloric value of food and displays the data visually with dynamic charts.</p>
-                <a href="https://github.com/meanjula/calorie-tracker" target="_blank" rel="noopener"><i class="fab fa-github-square" ></i></a>
+                <p>This calorie tracker app is built using JavaScript, the Parcel module bundler, and Chart.js. The app
+                  offers a clean, interactive interface for tracking the caloric value of food and displays the data
+                  visually with dynamic charts.</p>
+                <a href="https://github.com/meanjula/calorie-tracker" target="_blank" rel="noopener"><i
+                    class="fab fa-github-square"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="skills">
-        <div class="container">
-          <h2>Skills</h2>
-          <div class="card-box">
-            <div class="card">
-              <div class="icon-div">
-              <img src="https://toppng.com/uploads/preview/html5-js-css3-logo-png-11536003913vd86ju9pc1.png"  alt="html5 js css3"  class="skill-icon">
-              <img src="https://toppng.com/uploads/preview/redux-logo-11609374482s00xntsq98.png" alt="redux" class="skill-icon">
-              <img src="https://toppng.com/uploads/preview/react-logo-icon-11609374122d9vkbptqap.png" alt="react" class="skill-icon"  >
-              </div>
-              <progress class="file" value="95" max="100"></progress>
-              <p >Html, CSS, Javascript, React & Redux</p>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="card-box">
+          <div class="card">
+            <div class="icon-div">
+              <img src="https://toppng.com/uploads/preview/html5-js-css3-logo-png-11536003913vd86ju9pc1.png"
+                alt="html5 js css3" class="skill-icon">
+              <img src="https://toppng.com/uploads/preview/redux-logo-11609374482s00xntsq98.png" alt="redux"
+                class="skill-icon">
+              <img src="https://toppng.com/uploads/preview/react-logo-icon-11609374122d9vkbptqap.png" alt="react"
+                class="skill-icon">
             </div>
-            <div class="card">
-              <div class="icon-div">
-              <img src="images/typescript.png" alt="typescript" class="skill-icon"  >
-              <img class="skill-icon" src="https://img.shields.io/badge/Expressjs-grey?style=for-the-badge&logo=express" alt="Expressjs">
-              <img class="skill-icon" src="https://toppng.com/uploads/preview/nodejs-logo-vector-115739710199ssrzzitws.jpg" alt="node.js"  style="object-fit: cover;">
-              </div>
-              <progress id="css" class="file" value="80" max="100" ></progress>
-              <p>Typescript, Expressjs & Nodejs</p>
+            <progress class="file" value="95" max="100"></progress>
+            <p>Html, CSS, Javascript, React & Redux</p>
+          </div>
+          <div class="card">
+            <div class="icon-div">
+              <img src="images/typescript.png" alt="typescript" class="skill-icon">
+              <img class="skill-icon" src="https://img.shields.io/badge/Expressjs-grey?style=for-the-badge&logo=express"
+                alt="Expressjs">
+              <img class="skill-icon"
+                src="https://toppng.com/uploads/preview/nodejs-logo-vector-115739710199ssrzzitws.jpg" alt="node.js"
+                style="object-fit: cover;">
             </div>
-            <div class="card">
-              <div class="icon-div">
-              <img src="https://toppng.com/uploads/preview/mysql-logo-text-11609369806d1rsoukg5m.png" alt="mysql"  class="skill-icon">
-              <img src="https://toppng.com/uploads/preview/mongo-db-design-mongodb-logo-mongodb-11562879783bwj2cknalk.png" alt="mongo db design" class="skill-icon" >
-              <img class="skill-icon" src="./images/kindpng_272826.png" alt="jest"  >
-              </div>
-              <progress id="database"  class="file" value="60" max="100"></progress>
-              <p>Mysql, MongoDb & Jenkins + Docker</p>
+            <progress id="css" class="file" value="80" max="100"></progress>
+            <p>Typescript, Expressjs & Nodejs</p>
+          </div>
+          <div class="card">
+            <div class="icon-div">
+              <img src="https://toppng.com/uploads/preview/mysql-logo-text-11609369806d1rsoukg5m.png" alt="mysql"
+                class="skill-icon">
+              <img
+                src="https://toppng.com/uploads/preview/mongo-db-design-mongodb-logo-mongodb-11562879783bwj2cknalk.png"
+                alt="mongo db design" class="skill-icon">
+              <img class="skill-icon" src="./images/kindpng_272826.png" alt="jest">
             </div>
-            <div class="card">
-              <div class="icon-div ">
-              <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap"  class="skill-icon style-icon">
-              <img src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white" alt="mongodb" class="skill-icon style-icon" >
-              <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss" class="skill-icon style-icon" width="2px">
-              <img src="./images/figma.png" alt="figma" class="skill-icon" >
+            <progress id="database" class="file" value="60" max="100"></progress>
+            <p>Mysql, MongoDb & Jenkins + Docker</p>
+          </div>
+          <div class="card">
+            <div class="icon-div ">
+              <img
+                src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
+                alt="bootstrap" class="skill-icon style-icon">
+              <img src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white"
+                alt="mongodb" class="skill-icon style-icon">
+              <img
+                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="tailwindcss" class="skill-icon style-icon" width="2px">
+              <img src="./images/figma.png" alt="figma" class="skill-icon">
             </div>
-              <progress id="cicd"  class="file" value="90" max="100"></progress>
-              <p>Bootstrap, Mui, TailwindCss & Figma</a>
-            </div>
-            <div class="card">
-              <div class="icon-div">
-              <img class="skill-icon" src="./images/kindpng_2877399.png" alt="jest"  >
-              <img class="skill-icon" src="./images/kindpng_1522129.png" alt="aws"  >
-              <img src="images/microsoft-azure.png" alt="microsoft-azure" class="skill-icon"  >
-              <img class="skill-icon" src="https://img.shields.io/badge/Strapi-%234945FF?style=for-the-badge&logo=strapi" alt="Strapi">
+            <progress id="cicd" class="file" value="90" max="100"></progress>
+            <p>Bootstrap, Mui, TailwindCss & Figma</a>
+          </div>
+          <div class="card">
+            <div class="icon-div">
+              <img class="skill-icon" src="./images/kindpng_2877399.png" alt="jest">
+              <img class="skill-icon" src="./images/kindpng_1522129.png" alt="aws">
+              <img src="images/microsoft-azure.png" alt="microsoft-azure" class="skill-icon">
+              <img class="skill-icon"
+                src="https://img.shields.io/badge/Strapi-%234945FF?style=for-the-badge&logo=strapi" alt="Strapi">
 
             </div>
-              <progress id="js"  class="file" value="60" max="100"></progress>
-              <p>AWS, Azure portal, Jenkins & Strapi</p>
-            </div>
+            <progress id="js" class="file" value="60" max="100"></progress>
+            <p>AWS, Azure portal, Jenkins & Strapi</p>
           </div>
         </div>
-      </section>
-      <section id="contact">
-        <form class="container" action="https://formsubmit.co/anjula.ghale@gmail.com" method="POST">
-          <h3>Contact me</h3>
-          <div class="form-group">
-            <label for="first">First name</label>
-            <input type="text" id="first" name="firstname" required/>
-          </div>
-          <div class="form-group">
-            <label for="last">Last name</label>
-            <input type="text" id="last" name="lastname" required/>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required/>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="3" cols="20"></textarea>
-          </div>
-          <input type="submit" value="Send message" id="submit">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy;<span id='time'></span> Anjula Timsina</p>
-    </footer>
+      </div>
+    </section>
+    <section id="contact">
+      <form class="container" action="https://formsubmit.co/anjula.ghale@gmail.com" method="POST">
+        <h3>Contact me</h3>
+        <div class="form-group">
+          <label for="first">First name</label>
+          <input type="text" id="first" name="firstname" required />
+        </div>
+        <div class="form-group">
+          <label for="last">Last name</label>
+          <input type="text" id="last" name="lastname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="3" cols="20"></textarea>
+        </div>
+        <input type="submit" value="Send message" id="submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;<span id='time'></span> Anjula Timsina</p>
+  </footer>
   <script src="index.js"></script>
 
 </body>
+
 </html>
